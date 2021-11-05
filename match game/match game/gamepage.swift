@@ -9,9 +9,17 @@ import UIKit
 
 class gamepage: UIViewController {
 
+    
+    @IBOutlet weak var apple: UIButton!
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Match Game"
+        //apple.setImage(UIImage(named: "apple"), for: .normal)
 
         // Do any additional setup after loading the view.
     }

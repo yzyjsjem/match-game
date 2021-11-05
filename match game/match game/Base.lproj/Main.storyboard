@@ -77,26 +77,26 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ral-Hh-q7Y">
                                         <rect key="frame" x="0.0" y="0.0" width="302" height="151"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7eU-Dt-YoV">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7eU-Dt-YoV">
                                                 <rect key="frame" x="0.0" y="0.0" width="151" height="151"/>
-                                                <state key="normal" title="Button"/>
+                                                <state key="normal" title="Button" image="apple"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C7K-xH-Uw3">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C7K-xH-Uw3">
                                                 <rect key="frame" x="151" y="0.0" width="151" height="151"/>
-                                                <state key="normal" title="Button"/>
+                                                <state key="normal" title="Button" image="grape"/>
                                             </button>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Wqu-8i-32m">
                                         <rect key="frame" x="0.0" y="151" width="302" height="151"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIE-Pc-0yc">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIE-Pc-0yc">
                                                 <rect key="frame" x="0.0" y="0.0" width="151" height="151"/>
-                                                <state key="normal" title="Button"/>
+                                                <state key="normal" title="Button" image="pear"/>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5GX-on-UOc">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5GX-on-UOc">
                                                 <rect key="frame" x="151" y="0.0" width="151" height="151"/>
-                                                <state key="normal" title="Button"/>
+                                                <state key="normal" title="Button" image="strawberry"/>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -121,6 +121,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="YJK-LW-bqb"/>
+                    <connections>
+                        <outlet property="apple" destination="7eU-Dt-YoV" id="EDn-6Q-X3D"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RVv-n5-fhU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -146,6 +149,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="apple" width="128.35200500488281" height="142.26699829101562"/>
+        <image name="grape" width="243" height="311"/>
+        <image name="pear" width="172" height="266"/>
+        <image name="strawberry" width="128" height="128"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
