@@ -14,20 +14,28 @@ class gamepage: UIViewController {
     //show the current score
     @IBOutlet weak var fruitlabel: UILabel!
     //show the name of the fruit
-    @IBOutlet weak var apple: UIButton!
-    @IBOutlet weak var grape: UIButton!
-    @IBOutlet weak var pear: UIButton!
-    @IBOutlet weak var strawberry: UIButton!
+
+    @IBOutlet var fruitbuttons: [UIButton]!
+    
     //four buttons of fruits
     
+    var fruitlist = ["apple", "grape", "pear", "strawberry"] //all four choice
+    var score = 0
     
+
+    @IBAction func buttonpressed(_ sender: UIButton) {
+        fruitlabel.text = sender.title(for: .normal)!
+    }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Match Game"
+        scorelabel.text = "SCORE: \(score)"
         //apple.setImage(UIImage(named: "apple"), for: .normal)
 
+        
+        
         // Do any additional setup after loading the view.
     }
     

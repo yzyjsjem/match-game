@@ -80,10 +80,16 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7eU-Dt-YoV">
                                                 <rect key="frame" x="0.0" y="0.0" width="151" height="151"/>
                                                 <state key="normal" title="apple" image="apple"/>
+                                                <connections>
+                                                    <action selector="buttonpressed:" destination="oBW-lf-Lxe" eventType="touchUpInside" id="h29-OC-YrF"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C7K-xH-Uw3">
                                                 <rect key="frame" x="151" y="0.0" width="151" height="151"/>
                                                 <state key="normal" title="grape" image="grape"/>
+                                                <connections>
+                                                    <action selector="buttonpressed:" destination="oBW-lf-Lxe" eventType="touchUpInside" id="dIx-PF-bfU"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -93,10 +99,16 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIE-Pc-0yc">
                                                 <rect key="frame" x="0.0" y="0.0" width="151" height="151"/>
                                                 <state key="normal" title="pear" image="pear"/>
+                                                <connections>
+                                                    <action selector="buttonpressed:" destination="oBW-lf-Lxe" eventType="touchUpInside" id="Vg5-7l-QhS"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5GX-on-UOc">
                                                 <rect key="frame" x="151" y="0.0" width="151" height="151"/>
                                                 <state key="normal" title="strawberry" image="strawberry"/>
+                                                <connections>
+                                                    <action selector="buttonpressed:" destination="oBW-lf-Lxe" eventType="touchUpInside" id="LT7-Al-w37"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -122,12 +134,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="YJK-LW-bqb"/>
                     <connections>
-                        <outlet property="apple" destination="7eU-Dt-YoV" id="EDn-6Q-X3D"/>
                         <outlet property="fruitlabel" destination="hw8-V7-Het" id="gII-pv-rwc"/>
-                        <outlet property="grape" destination="C7K-xH-Uw3" id="Lmh-X5-Jm8"/>
-                        <outlet property="pear" destination="CIE-Pc-0yc" id="LxN-vt-bcf"/>
                         <outlet property="scorelabel" destination="7Lm-TE-yIQ" id="nou-nd-v39"/>
-                        <outlet property="strawberry" destination="5GX-on-UOc" id="DID-Zn-dL8"/>
+                        <outletCollection property="fruitbuttons" destination="7eU-Dt-YoV" collectionClass="NSMutableArray" id="58Y-3n-5Om"/>
+                        <outletCollection property="fruitbuttons" destination="C7K-xH-Uw3" collectionClass="NSMutableArray" id="RqQ-dE-5PM"/>
+                        <outletCollection property="fruitbuttons" destination="CIE-Pc-0yc" collectionClass="NSMutableArray" id="ILk-FZ-cDO"/>
+                        <outletCollection property="fruitbuttons" destination="5GX-on-UOc" collectionClass="NSMutableArray" id="lUd-W5-yaz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RVv-n5-fhU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
