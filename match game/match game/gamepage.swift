@@ -21,10 +21,11 @@ class gamepage: UIViewController {
     
     var fruitlist = ["apple", "grape", "pear", "strawberry"] //all four choice
     var score = 0
+    var question : String!
     
 
     @IBAction func buttonpressed(_ sender: UIButton) {
-        fruitlabel.text = sender.title(for: .normal)!
+        fruitlabel.text = sender.title(for: .normal)!//need to change later
     }
     
     
@@ -32,11 +33,19 @@ class gamepage: UIViewController {
         super.viewDidLoad()
         title = "Match Game"
         scorelabel.text = "SCORE: \(score)"
+        resetquestion()
+        fruitlabel.text = question
         //apple.setImage(UIImage(named: "apple"), for: .normal)
 
         
         
         // Do any additional setup after loading the view.
+    }
+    
+    
+    
+    func resetquestion(){
+        question = fruitlist.randomElement()!
     }
     
 
