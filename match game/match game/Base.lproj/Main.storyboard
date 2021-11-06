@@ -79,11 +79,11 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7eU-Dt-YoV">
                                                 <rect key="frame" x="0.0" y="0.0" width="151" height="151"/>
-                                                <state key="normal" title="Button" image="apple"/>
+                                                <state key="normal" title="apple" image="apple"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C7K-xH-Uw3">
                                                 <rect key="frame" x="151" y="0.0" width="151" height="151"/>
-                                                <state key="normal" title="Button" image="grape"/>
+                                                <state key="normal" title="grape" image="grape"/>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -92,11 +92,11 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIE-Pc-0yc">
                                                 <rect key="frame" x="0.0" y="0.0" width="151" height="151"/>
-                                                <state key="normal" title="Button" image="pear"/>
+                                                <state key="normal" title="pear" image="pear"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5GX-on-UOc">
                                                 <rect key="frame" x="151" y="0.0" width="151" height="151"/>
-                                                <state key="normal" title="Button" image="strawberry"/>
+                                                <state key="normal" title="strawberry" image="strawberry"/>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -123,6 +123,11 @@
                     <navigationItem key="navigationItem" id="YJK-LW-bqb"/>
                     <connections>
                         <outlet property="apple" destination="7eU-Dt-YoV" id="EDn-6Q-X3D"/>
+                        <outlet property="fruitlabel" destination="hw8-V7-Het" id="gII-pv-rwc"/>
+                        <outlet property="grape" destination="C7K-xH-Uw3" id="Lmh-X5-Jm8"/>
+                        <outlet property="pear" destination="CIE-Pc-0yc" id="LxN-vt-bcf"/>
+                        <outlet property="scorelabel" destination="7Lm-TE-yIQ" id="nou-nd-v39"/>
+                        <outlet property="strawberry" destination="5GX-on-UOc" id="DID-Zn-dL8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RVv-n5-fhU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

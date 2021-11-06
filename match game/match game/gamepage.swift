@@ -10,8 +10,15 @@ import UIKit
 class gamepage: UIViewController {
 
     
+    @IBOutlet weak var scorelabel: UILabel!
+    //show the current score
+    @IBOutlet weak var fruitlabel: UILabel!
+    //show the name of the fruit
     @IBOutlet weak var apple: UIButton!
-    
+    @IBOutlet weak var grape: UIButton!
+    @IBOutlet weak var pear: UIButton!
+    @IBOutlet weak var strawberry: UIButton!
+    //four buttons of fruits
     
     
     
