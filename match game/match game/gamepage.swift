@@ -25,7 +25,18 @@ class gamepage: UIViewController {
     
 
     @IBAction func buttonpressed(_ sender: UIButton) {
-        fruitlabel.text = sender.title(for: .normal)!//need to change later
+        if fruitlabel.text == sender.title(for: .normal)! {
+            score += 1
+            scorelabel.text = "SCORE: \(score)"
+            resetquestion()
+            fruitlabel.text = question
+            
+        }
+        else{
+            resetquestion()
+            fruitlabel.text = question
+        }
+       
     }
     
     
