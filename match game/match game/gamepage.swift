@@ -29,12 +29,12 @@ class gamepage: UIViewController {
             score += 1
             scorelabel.text = "SCORE: \(score)"
             resetquestion()
-            fruitlabel.text = question
+           
             
         }
         else{
             resetquestion()
-            fruitlabel.text = question
+            
         }
        
     }
@@ -45,7 +45,7 @@ class gamepage: UIViewController {
         title = "Match Game"
         scorelabel.text = "SCORE: \(score)"
         resetquestion()
-        fruitlabel.text = question
+        
         //apple.setImage(UIImage(named: "apple"), for: .normal)
 
         
@@ -57,6 +57,7 @@ class gamepage: UIViewController {
     
     func resetquestion(){
         question = fruitlist.randomElement()!
+        fruitlabel.text = question
     }
     
 
