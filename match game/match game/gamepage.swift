@@ -47,6 +47,7 @@ class gamepage: UIViewController {
         resetquestion()
         
         //apple.setImage(UIImage(named: "apple"), for: .normal)
+        //the above image should set with rendering mode to be always original so that the image won't turn blue.
 
         
         
